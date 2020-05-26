@@ -1,10 +1,10 @@
 import './index.scss';
+import './model/runner';
 
 import React from 'react';
 import { render } from 'react-dom';
 
 import { register } from './serviceWorker';
-import TestComponent from './TestComponent';
 
 // here we disable console and performance for better production experience
 // console.log(process.env.NODE_ENV);
@@ -14,11 +14,7 @@ import TestComponent from './TestComponent';
 //   console.log = () => undefined as any;
 // }
 
-const App = () => (
-  <div styleName="a">
-    kek <TestComponent />
-  </div>
-);
+const App = () => <div styleName="a">kek</div>;
 
 render(<App />, document.getElementById("root"));
 
